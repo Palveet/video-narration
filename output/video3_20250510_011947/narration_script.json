@@ -1,0 +1,39 @@
+{
+  "segments": [
+    {
+      "start_time": 0.0,
+      "end_time": 12.0,
+      "duration": 12.0,
+      "text": "Envision a sanctuary where the world slows and allows a breath to linger in the air. Deep within nature's embrace, a canvas of golden-brown and verdant green stretches across a tranquil landscape. Here, late afternoon sun graces the land, casting diffused light that dances over swaying grass and whispers of serenity.",
+      "scene_idx": 0
+    },
+    {
+      "start_time": 12.0,
+      "end_time": 24.0,
+      "duration": 12.0,
+      "text": "Our eyes are drawn to a central figure, a stalwart tree, centuries-old and proud. Its rough bark speaks of weathered seasons and whispered secrets of the forest. Nearby, a family of deer, their light coats subtly merging with the earth tones around, grazes in peaceful abandonment.",
+      "scene_idx": 0
+    },
+    {
+      "start_time": 24.0,
+      "end_time": 36.0,
+      "duration": 12.0,
+      "text": "This quiet realm, carved out by a luscious barrier of deep green trees, stands as a testament to isolation and beauty unspoiled. The sounds of rustling leaves and soft movements of the deer punctuate the silence, creating rhythm in the stillness.",
+      "scene_idx": 0
+    },
+    {
+      "start_time": 36.0,
+      "end_time": 48.0,
+      "duration": 12.0,
+      "text": "Gentle shadows grow long as the day nears its end, painting contrast upon the blanket of grass. Every element\u2014from the gentle stirring of the breeze to the fleeting glances of hidden creatures\u2014contributes its verse to this ballad of the wild.",
+      "scene_idx": 0
+    },
+    {
+      "start_time": 48.0,
+      "end_time": 59.1,
+      "duration": 11.100000000000001,
+      "text": "In this moment captured, frozen in time yet alive with every subtle nuance, we experience the true essence of nature\u2019s unspoken poetry. Such serenity and balance invite us to pause, reflect, and cherish the simple yet profound beauty of life entwined with the natural world.",
+      "scene_idx": 0
+    }
+  ]
+}

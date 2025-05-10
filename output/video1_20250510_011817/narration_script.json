@@ -1,0 +1,46 @@
+{
+  "segments": [
+    {
+      "start_time": 0.0,
+      "end_time": 30.0,
+      "duration": 30.0,
+      "text": "Welcome to a serene winter's day, where a quiet boulevard lies under the gentle embrace of freshly fallen snow. Our scene begins with a solitary stone bench, an invitation to pause and reflect, dusted lightly by snowflakes that swirl lazily through the crisp air.",
+      "scene_idx": 0
+    },
+    {
+      "start_time": 30.0,
+      "end_time": 60.0,
+      "duration": 30.0,
+      "text": "Beside the bench, a black metal railing adorned with the delicate patterns of frost stands guard over the scene. It guides our gaze towards a row of hushed bushes, each branch a testament to nature's quiet solitude during the winter's cold embrace.",
+      "scene_idx": 0
+    },
+    {
+      "start_time": 60.0,
+      "end_time": 90.0,
+      "duration": 30.0,
+      "text": "As our eyes wander farther, a lone white pickup truck moves slowly down the wide boulevard, its tires etching faint lines in the snow-covered road. The soft hum of its engine is but a whisper against the great silence.",
+      "scene_idx": 0
+    },
+    {
+      "start_time": 90.0,
+      "end_time": 120.0,
+      "duration": 30.0,
+      "text": "In the backdrop, a large building with expansive glass windows reflects the stark, grey sky. Nearby, a bus shelter wears a cap of snow, yet to fulfill its purpose on this particularly still day. The familiar structures stand as silent witnesses to the solemn beauty of winter.",
+      "scene_idx": 0
+    },
+    {
+      "start_time": 120.0,
+      "end_time": 150.0,
+      "duration": 30.0,
+      "text": "Look upwards and you'll see tall, bare-branched trees reaching towards the heavens, their limbs outlined against the wintry sky. Each one, stripped of its verdant glory, stands resilient in the face of chilling winds and biting frost.",
+      "scene_idx": 0
+    },
+    {
+      "start_time": 150.0,
+      "end_time": 172.8,
+      "duration": 22.80000000000001,
+      "text": "As we watch, the scene invites us to contemplate the profound quiet of winter, a season of restraint and introspection. Here, in this small, snowy tableau, one finds a moment of peace in the relentless march of time.",
+      "scene_idx": 0
+    }
+  ]
+}

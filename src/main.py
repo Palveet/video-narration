@@ -63,7 +63,7 @@ def process_video(
     )
     
     return {
-        "metadata": video_metadata.dict(),
+        "metadata": video_metadata.model_dump(),
         "scenes": len(scenes),
         "narrative_segments": len(narrative),
         "outputs": output_paths

@@ -1,0 +1,23 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="video-narration",
+    version="1.0.0",
+    packages=find_packages(),
+    install_requires=[
+        "scenedetect[opencv]",
+        "opencv-python>=4.6.0",
+        "python-dotenv>=1.0.0",
+        "openai>=1.0.0",
+        "elevenlabs>=0.2.24",
+        "fastapi>=0.105.0",
+        "uvicorn>=0.24.0",
+        "python-multipart>=0.0.6",
+        "requests>=2.31.0",
+        "pydantic>=2.5.2",
+        "numpy>=1.26.0",
+        "pydub>=0.25.1",
+        "pytest>=7.4.3",
+        "pytest-asyncio>=0.21.1"
+    ],
+) 

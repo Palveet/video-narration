@@ -8,7 +8,6 @@ A Python service that automatically generates narrative audio for videos in a st
 - AI-powered narrative generation
 - High-quality text-to-speech conversion
 - Multiple output formats (JSON, SRT, VTT)
-- REST API support
 - Command-line interface
 
 ## Prerequisites
@@ -71,28 +70,17 @@ Note: The .env file method is recommended as it's more secure and easier to mana
 
 ### Command Line Interface
 
-Process a video file:
+Basic usage:
 ```bash
-python src/main.py path/to/video.mp4 --output-dir output --format json
+python src/main.py path/to/video.mp4
+example: python src/main.py sample_data/video1.mp4
 ```
 
 Options:
 - `--output-dir`: Directory to save outputs (default: "output")
 - `--format`: Output format (json, srt, vtt) (default: "json")
 
-### REST API
-
-Start the API server:
-```bash
-uvicorn src.main:app --reload
-```
-
-API Endpoint:
-- POST `/narrate`
-  - Parameters:
-    - `video`: Video file (multipart/form-data)
-    - `video_url`: URL of the video (string)
-    - `output_format`: Output format (json, srt, vtt)
+Note: Currently, only local video files are supported. Video URLs are not supported in the CLI.
 
 ## Output Structure
 
@@ -152,7 +140,6 @@ video-narration/
 - opencv-python: Video processing
 - openai: GPT-4 for narrative generation
 - elevenlabs: Text-to-speech conversion
-- fastapi: REST API
 - pydub: Audio processing
 - pytest: Testing framework
 - python-dotenv: Environment variable management

@@ -5,6 +5,7 @@ import subprocess
 from typing import List, Dict, Any, Optional
 from pathlib import Path
 import shutil
+from pydub import AudioSegment
 
 from narrative_generator import NarrativeSegment
 
@@ -102,16 +103,17 @@ class OutputRenderer:
         return script_path
     
     def _mux_audio_with_video(self, video_path: str, audio_path: str, output_dir: str) -> str:
-        
+        print(video_path)
+        print(audio_path)
         try:
             output_path = os.path.join(output_dir, "narrated_video.mp4")
-            
+            ffmpeg_path = AudioSegment.converter
             ffmpeg_cmd = [
-                "ffmpeg", "-y",
+                ffmpeg_path, "-y",
                 "-i", video_path,
                 "-i", audio_path,
-                "-map", "0:v",  
-                "-map", "1:a",  
+                "-map", "0:v:0",  
+                "-map", "1:a:0",  
                 "-c:v", "copy",  
                 "-shortest",
                 output_path

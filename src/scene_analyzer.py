@@ -63,7 +63,6 @@ class SceneAnalyzer:
                 keyframe_path=keyframe_path,
                 scene_type=scene_type
             ))
-        
         cap.release()
         
         if not scenes:
@@ -93,7 +92,6 @@ class SceneAnalyzer:
             ))
             
             cap.release()
-        
         return scenes
     
     def _detect_scene_type(self, frame: np.ndarray) -> str:

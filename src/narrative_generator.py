@@ -91,25 +91,31 @@ class VisualNarrativeGenerator:
             scenes_json = json.dumps(scene_descriptions, indent=2)
             
             prompt = f"""
-            You are a master storyteller creating a compelling narrative for a {video_metadata.duration:.1f} second video.
+            You are a master storyteller creating a compelling narrative for a {video_metadata.duration} second video.
             
             Here are the scenes in the video with their descriptions:
             {scenes_json}
             
             Create a cohesive, engaging narration script that tells a story based on these scenes. 
             The narration should:
-            1. Flow like an audiobook or documentary, not just describe what's on screen
+            1. Flow like an audiobook, not just describe what's on screen
             2. Have a beginning, middle, and end structure
             3. Use vivid language and appropriate pacing
             4. Fit within the time constraints of each scene
+            Also consider:
+            Fill the entire runtime – start when the video starts, stop when it ends.
+
+            Synchronise sensibly – spoken words should line up with what’s on‑screen to within a reasonable tolerance; no large drifts or awkward pauses.
+
+            Tell a story, not a caption track – the audience should feel they are listening to a vivid audiobook version of the film, not a literal description of each frame.
             
             Format your response as a JSON array of segments, each with:
             - scene_idx: the scene index
             - start_time: time in seconds when narration starts
             - end_time: time in seconds when narration ends
-            - text: the narration text (aim for ~130-150 words per minute)
+            - text: the narration text
             
-            Make sure narration covers the entire video duration with no large gaps.
+            Make sure narration covers the entire video duration with no large gaps
             """
             
             response = self.client.chat.completions.create(

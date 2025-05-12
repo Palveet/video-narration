@@ -145,7 +145,7 @@ video-narration/
 - python-dotenv: Environment variable management
 
 ## Acknowledgments
-
+- The videos in the sample_data are all shot by me :)
 - OpenAI for GPT-4
 - ElevenLabs for text-to-speech
 - FFmpeg for video/audio processing
